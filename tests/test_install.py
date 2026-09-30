@@ -4,6 +4,26 @@ from hermes_learn.install import install, uninstall
 
 class InstallTests(unittest.TestCase):
 
+    def test_fingerprint_uses_portable_paths_on_windows(self):
+        from pathlib import PureWindowsPath
+        from unittest.mock import Mock, patch
+        from hermes_learn.install import fingerprint
+        import hashlib
+
+        file = Mock()
+        file.is_symlink.return_value = False
+        file.is_file.return_value = True
+        file.parent.name = 'nested'
+        file.relative_to.return_value = PureWindowsPath('nested/helper.py')
+        file.read_bytes.return_value = b'original content'
+        root = Mock()
+        root.is_symlink.return_value = False
+        root.rglob.return_value = [file]
+        with patch('hermes_learn.install.Path', return_value=root):
+            self.assertEqual(fingerprint('source'), {
+                'nested/helper.py': hashlib.sha256(b'original content').hexdigest(),
+            })
+
     def test_isolated_install_roundtrip(self):
         with tempfile.TemporaryDirectory() as d:
             h = Path(d).resolve()
