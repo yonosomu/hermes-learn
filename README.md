@@ -124,6 +124,9 @@ python -m hermes_learn uninstall --home /path/to/profile
 ```
 
 Uninstall checks hashes and refuses modified/extra files, preserving your edits.
+New ownership manifests use forward-slash relative paths on every platform,
+including Windows. Legacy Windows manifests with mixed separators are not
+rewritten automatically; back up files and resolve ownership conflicts manually.
 Back up changed files and resolve ownership conflicts manually; there is no force
 delete option. Study state, external journals and images survive intentionally.
 Upgrade through backed-up uninstall/reinstall; no automatic updater is included.

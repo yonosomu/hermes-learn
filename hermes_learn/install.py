@@ -27,7 +27,7 @@ def fingerprint(path):
         if f.is_symlink():
             raise ValueError('symlinks forbidden in install tree')
         if f.is_file() and not disposable_cache(f):
-            result[str(f.relative_to(p))] = hashlib.sha256(f.read_bytes()).hexdigest()
+            result[f.relative_to(p).as_posix()] = hashlib.sha256(f.read_bytes()).hexdigest()
     return result
 
 def safe_targets(h):
