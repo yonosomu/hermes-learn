@@ -1,0 +1,9 @@
+{
+  "native_tools_invoked": 3,
+  "quiz_status": "correct",
+  "diagram": {
+    "rendered": false,
+    "source": "<isolated-profile>/native-diagram.svg",
+    "reason": "renderer unavailable: rsvg-convert"
+  }
+}

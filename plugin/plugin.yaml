@@ -1,0 +1,9 @@
+name: hermes-learn
+version: 0.1.0
+description: Local quizzes, explicit study journals, and diagram helpers
+license: MIT
+author: Philip Richard (yonosomu)
+provides_tools:
+  - learn_quiz
+  - learn_journal
+  - learn_visual

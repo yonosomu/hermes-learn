@@ -1,0 +1,21 @@
+test_bad_svg_is_json_error (test_cli_errors.CliErrorTests.test_bad_svg_is_json_error) ... ok
+test_conflict_preserved (test_install.InstallTests.test_conflict_preserved) ... ok
+test_isolated_install_roundtrip (test_install.InstallTests.test_isolated_install_roundtrip) ... ok
+test_modified_install_not_removed (test_install.InstallTests.test_modified_install_not_removed) ... ok
+test_cli_quiz (test_interface.InterfaceTests.test_cli_quiz) ... ok
+test_plugin_register (test_interface.InterfaceTests.test_plugin_register) ... ok
+test_explicit_entries (test_journal.JournalTests.test_explicit_entries) ... ok
+test_unknown_kind_rejected (test_journal.JournalTests.test_unknown_kind_rejected) ... ok
+test_hidden_and_persisted (test_quiz.QuizTests.test_hidden_and_persisted) ... ok
+test_ancestor_symlink_rejected (test_safety.SafetyTests.test_ancestor_symlink_rejected) ... ok
+test_installed_plugin_self_contained (test_safety.SafetyTests.test_installed_plugin_self_contained) ... ok
+test_multi_unknown_skip_validation (test_safety.SafetyTests.test_multi_unknown_skip_validation) ... ok
+test_source_entrypoint_without_pythonpath (test_source_plugin.SourcePluginTests.test_source_entrypoint_without_pythonpath) ... ok
+test_missing_renderer_is_honest (test_visual.VisualTests.test_missing_renderer_is_honest) ... ok
+test_source_and_exact_edit (test_visual.VisualTests.test_source_and_exact_edit) ... ok
+test_svg_rejects_active_content (test_visual.VisualTests.test_svg_rejects_active_content) ... ok
+
+----------------------------------------------------------------------
+Ran 16 tests in 0.217s
+
+OK

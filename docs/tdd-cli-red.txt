@@ -1,0 +1,23 @@
+test_bad_svg_is_json_error (test_cli_errors.CliErrorTests.test_bad_svg_is_json_error) ... ERROR
+
+======================================================================
+ERROR: test_bad_svg_is_json_error (test_cli_errors.CliErrorTests.test_bad_svg_is_json_error)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "<checkout>/tests/test_cli_errors.py", line 9, in test_bad_svg_is_json_error
+    self.assertIn('error',json.loads(r.stderr))
+                          ~~~~~~~~~~^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/json/__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+           ~~~~~~~~~~~~~~~~~~~~~~~^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/json/decoder.py", line 345, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+               ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/json/decoder.py", line 363, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+
+----------------------------------------------------------------------
+Ran 1 test in 0.068s
+
+FAILED (errors=1)

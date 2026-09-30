@@ -1,0 +1,31 @@
+test_source_entrypoint_without_pythonpath (test_source_plugin.SourcePluginTests.test_source_entrypoint_without_pythonpath) ... FAIL
+
+======================================================================
+FAIL: test_source_entrypoint_without_pythonpath (test_source_plugin.SourcePluginTests.test_source_entrypoint_without_pythonpath)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "<checkout>/tests/test_source_plugin.py", line 9, in test_source_entrypoint_without_pythonpath
+    self.assertEqual(r.returncode,0,r.stderr)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 1 != 0 : Traceback (most recent call last):
+  File "<checkout>/plugin/__init__.py", line 5, in <module>
+    from .runtime.core import QuizStore
+ModuleNotFoundError: No module named 'learn_external.runtime'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+    import importlib.util,sys; s=importlib.util.spec_from_file_location('learn_external',sys.argv[1],submodule_search_locations=[str(__import__('pathlib').Path(sys.argv[1]).parent)]); m=importlib.util.module_from_spec(s);sys.modules[s.name]=m;s.loader.exec_module(m);assert callable(m.register)
+                                                                                                                                                                                                                                                   ~~~~~~~~~~~~~~~~~~~~^^^
+  File "<frozen importlib._bootstrap_external>", line 762, in exec_module
+  File "<frozen importlib._bootstrap>", line 491, in _call_with_frames_removed
+  File "<checkout>/plugin/__init__.py", line 9, in <module>
+    from hermes_learn.core import QuizStore
+ModuleNotFoundError: No module named 'hermes_learn'
+
+
+----------------------------------------------------------------------
+Ran 1 test in 0.035s
+
+FAILED (failures=1)

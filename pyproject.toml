@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=68,<83"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "hermes-learn"
+version = "0.1.0"
+description = "Portable Hermes teaching skills and local learning tools"
+readme = "README.md"
+requires-python = ">=3.10"
+license = {text = "MIT"}
+authors = [{name = "Philip Richard (yonosomu)"}]
+dependencies = []
+
+[project.scripts]
+hermes-learn = "hermes_learn.cli:main"
+
+[project.urls]
+Repository = "https://github.com/yonosomu/hermes-learn"
+
+[tool.setuptools]
+packages = ["hermes_learn"]

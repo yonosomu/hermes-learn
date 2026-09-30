@@ -1,0 +1,12 @@
+{
+  "question": "Which arrow expresses a prerequisite relationship?",
+  "options": [
+    "Prerequisite \u2192 dependent idea",
+    "Dependent idea \u2192 prerequisite"
+  ],
+  "correct": [
+    1
+  ],
+  "explanation": "The earlier idea supports the later one.",
+  "multiple": false
+}
