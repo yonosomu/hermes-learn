@@ -2,7 +2,10 @@
 
 <!-- tech-stack-badges -->
 <p align="center">
-![Python](https://img.shields.io/badge/Python-3.10%2B-3776AB?style=for-the-badge&logo=python&logoColor=white) ![SQLite](https://img.shields.io/badge/SQLite-Storage-003B57?style=for-the-badge&logo=sqlite&logoColor=white) ![Mermaid](https://img.shields.io/badge/Mermaid-Diagrams-FF3670?style=for-the-badge&logo=mermaid&logoColor=white) ![pytest](https://img.shields.io/badge/pytest-Tests-0A9EDC?style=for-the-badge&logo=pytest&logoColor=white)
+<img alt="Python" src="https://img.shields.io/badge/Python-3.10%2B-3776AB?style=for-the-badge&amp;logo=python&amp;logoColor=white" />
+<img alt="SQLite" src="https://img.shields.io/badge/SQLite-Storage-003B57?style=for-the-badge&amp;logo=sqlite&amp;logoColor=white" />
+<img alt="Mermaid" src="https://img.shields.io/badge/Mermaid-Diagrams-FF3670?style=for-the-badge&amp;logo=mermaid&amp;logoColor=white" />
+<img alt="pytest" src="https://img.shields.io/badge/pytest-Tests-0A9EDC?style=for-the-badge&amp;logo=pytest&amp;logoColor=white" />
 </p>
 <!-- /tech-stack-badges -->
 
