@@ -1,5 +1,11 @@
 # hermes-learn
 
+<!-- tech-stack-badges -->
+<p align="center">
+![Python](https://img.shields.io/badge/Python-3.10%2B-3776AB?style=for-the-badge&logo=python&logoColor=white) ![SQLite](https://img.shields.io/badge/SQLite-Storage-003B57?style=for-the-badge&logo=sqlite&logoColor=white) ![Mermaid](https://img.shields.io/badge/Mermaid-Diagrams-FF3670?style=for-the-badge&logo=mermaid&logoColor=white) ![pytest](https://img.shields.io/badge/pytest-Tests-0A9EDC?style=for-the-badge&logo=pytest&logoColor=white)
+</p>
+<!-- /tech-stack-badges -->
+
 Portable teaching skills and functional local learning tools for **Hermes Agent**.
 An original implementation inspired by amosblomqvist/learn, not a Pi extension or
 fork. [Русская версия](README.ru.md) · [Parity](docs/feature-parity.md) ·
